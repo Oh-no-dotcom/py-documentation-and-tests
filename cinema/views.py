@@ -131,17 +131,17 @@ class MovieViewSet(
     @extend_schema(
         parameters=[
             OpenApiParameter(
-                "Title",
+                "title",
                 type={"type": "array", "items": {"type": "string"}},
                 description="Filter movies by title (ex. Inception)",
             ),
             OpenApiParameter(
-                "Genres",
+                "genres",
                 type={"type": "array", "items": {"type": "string"}},
                 description="Filter movies by genres (ex. Adventure)",
             ),
             OpenApiParameter(
-                "Actors",
+                "actors",
                 type={"type": "array", "items": {"type": "string"}},
                 description="Filter movies by actors (ex. Leonardo DiCaprio)",
             ),
